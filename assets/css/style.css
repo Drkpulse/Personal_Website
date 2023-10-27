@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #08ff00;
+  color: #845ec2;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff0000;
+  color: #570A57;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #08ff00;
+  background: #845ec2;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ff0000;
+  background: #570A57;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 2px solid #08ff00;
+  border: 2px solid #845ec2;
 }
 
 #header .profile h1 {
@@ -122,7 +122,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #08ff00;
+  background: #570A57;
   color: #fff;
   text-decoration: none;
 }
@@ -202,7 +202,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #08ff00;
+  color: #570A57;
 }
 
 /* Mobile Navigation */
@@ -215,7 +215,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #08ff00;
+  background-color: #845ec2;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -281,7 +281,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 2px solid #08ff00;
+  border-bottom: 3px solid #570A57;
 }
 
 @media (min-width: 1024px) {
@@ -326,7 +326,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #08ff00;
+  color: #845ec2;
 }
 
 .section-title h2::after {
@@ -335,7 +335,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #ff0000;
+  background: #570A57;
   bottom: 0;
   left: 0;
 }
@@ -350,7 +350,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #ffff00;
+  color: #b39cd0;
 }
 
 .about .content ul {
@@ -371,7 +371,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ffff00;
+  color: #570A57;
   line-height: 0;
 }
 
@@ -447,7 +447,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #08ff00;
+  color: #845ec2;
 }
 
 .skills .progress .skill .val {
@@ -464,7 +464,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 3s;
-  background-color: #ffff00;
+  background-color: #570A57;
 }
 
 /*--------------------------------------------------------------
@@ -475,13 +475,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #08ff00;
+  color: #ffffff;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #ff0000;
+  border-left: 2px solid #570A57;
   position: relative;
 }
 
@@ -491,7 +491,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #ffff00;;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -526,7 +526,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #ff0000;
+  border: 2px solid #570A57;
 }
 
 /*--------------------------------------------------------------
