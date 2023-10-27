@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #780083;
+  color: #08ff00;
   text-decoration: none;
 }
 
 a:hover {
-  color: #eb00ff;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #eb00ff;
+  background: #08ff00;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #eb00ff;
+  background: #ff0000;
   color: #fff;
 }
 
@@ -87,7 +87,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 2px solid #08ff00;
 }
 
 #header .profile h1 {
@@ -122,7 +122,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #eb00ff;
+  background: #08ff00;
   color: #fff;
   text-decoration: none;
 }
@@ -202,7 +202,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #08ff00;
 }
 
 /* Mobile Navigation */
@@ -215,7 +215,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #08ff00;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -281,7 +281,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #eb00ff;
+  border-bottom: 2px solid #08ff00;
 }
 
 @media (min-width: 1024px) {
@@ -312,7 +312,8 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background-color: rgb(27, 30, 31);
+  background-image: none;
 }
 
 .section-title {
@@ -325,7 +326,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #08ff00;
 }
 
 .section-title h2::after {
@@ -334,7 +335,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #ff0000;
   bottom: 0;
   left: 0;
 }
@@ -349,7 +350,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #ffff00;
 }
 
 .about .content ul {
@@ -370,7 +371,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #ffff00;
   line-height: 0;
 }
 
@@ -393,7 +394,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #eb00ff;
   float: left;
   line-height: 0;
 }
@@ -430,7 +431,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -446,7 +447,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #08ff00;
 }
 
 .skills .progress .skill .val {
@@ -462,8 +463,8 @@ section {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+  transition: 3s;
+  background-color: #ffff00;
 }
 
 /*--------------------------------------------------------------
@@ -474,13 +475,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #08ff00;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #ff0000;
   position: relative;
 }
 
@@ -490,13 +491,14 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #ffff00;;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background-color: rgb(33, 36, 37);
+  background-image: none;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -524,7 +526,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #ff0000;
 }
 
 /*--------------------------------------------------------------
@@ -559,7 +561,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #eb00ff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -649,11 +651,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #eb00ff;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #eb00ff;
 }
 
 .portfolio-details .portfolio-info {
@@ -707,10 +709,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #eb00ff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #eb00ff;
 }
 
 .services .icon i {
@@ -724,7 +726,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #eb00ff;
 }
 
 .services .title {
@@ -739,7 +741,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #eb00ff;
 }
 
 .services .description {
@@ -833,11 +835,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #eb00ff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #eb00ff;
 }
 
 /*--------------------------------------------------------------
@@ -856,7 +858,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #eb00ff;
   float: left;
   width: 44px;
   height: 44px;
@@ -880,7 +882,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #6800ff;
 }
 
 .contact .info .email p {
@@ -907,14 +909,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #eb00ff;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #eb00ff;
   color: #fff;
 }
 
@@ -1002,7 +1004,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #eb00ff;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1103,4 +1105,64 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+/*--------------------------------------------------------------
+# DarkMode
+--------------------------------------------------------------*/
+
+html {
+  background-color: #181a1b !important;
+}
+html {
+  color-scheme: dark !important;
+}
+html, body {
+  background-color: #181a1b;
+}
+html, body {
+  border-color: #736b5e;
+  color: #e8e6e3;
+}
+a {
+  color: #3391ff;
+}
+table {
+  border-color: #545b5e;
+}
+::placeholder {
+  color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #404400 !important;
+  color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+* {
+  scrollbar-color: #454a4d #202324;
+}
+::selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
+}
+::-moz-selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
 }
