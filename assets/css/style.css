@@ -649,6 +649,7 @@ section {
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #eb00ff;
+  padding-bottom: 70px;
 }
 
 .services .icon i {
@@ -1104,10 +1105,11 @@ select:-webkit-autofill {
 }
 
 .dwbutton {
-  background-color: #570A57;
-  border-color: #845ec2;
+  background-color: #aa04aa;
+  color: white;
 }
 
 .dwbutton:hover {
-  border-color: #845ec2;
+  background-color: #880388;
+  color: white;
 }
