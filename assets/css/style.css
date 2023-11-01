@@ -649,7 +649,7 @@ section {
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #eb00ff;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 
 .services .icon i {
