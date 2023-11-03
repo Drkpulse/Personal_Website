@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Website</title>
+    <script>
+        // Function to retrieve cookies from the original website
+        function retrieveCookiesFromOriginalWebsite() {
+            // Replace with the URL of your Original Website
+            const originalWebsiteURL = 'http://localhost/test/cookies.html'; // Example: 'http://example.com/original-website.html'
+
+            // Make a GET request to the Original Website (Provider)
+            fetch(originalWebsiteURL)
+                .then(response => response.text())
+                .then(data => {
+                    // Extract and display the cookies from the response
+                    const cookies = data.split(';');
+                    cookies.forEach(cookie => {
+                        alert(`Cookie from Original Website: ${cookie.trim()}`);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching cookies from the original website:', error);
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>New Website</h1>
+    <button onclick="retrieveCookiesFromOriginalWebsite()">Get Cookies from Original Website</button>
+</body>
+</html>

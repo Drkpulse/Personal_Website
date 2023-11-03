@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joaquim's Comic Website</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive;
+            background-color: #ffffcc; /* Light yellow background */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0074d9;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #ffffff; /* White background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            animation: slideIn 1s ease-in;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        /* Add a comic book-style border to container */
+        .container {
+            border: 2px solid black;
+            padding: 1rem;
+        }
+
+        /* Add comic-style speech bubbles */
+        .speech-bubble {
+            background-color: #ffffcc; /* Light yellow background */
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 10px 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        /* Add comic book-style fonts and colors to header and sections */
+        h1, h2, p {
+            font-family: "Comic Sans MS", cursive;
+            color: #000; /* Black text color */
+        }
+
+        /* Add a comic book-style cursor */
+        body {
+            cursor: url('comic-cursor.png'), auto;
+        }
+        /* CSS for the cookie consent banner */
+        #cookie-consent-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        #cookie-consent-banner button {
+            background-color: #0074d9;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	    <!-- Cookie consent banner -->
+		<div id="cookie-consent-banner">
+			This website uses cookies to ensure you get the best experience on our website.
+			<button id="accept-cookies">Accept</button>
+		</div>
+
+		<!-- JavaScript to set and display cookie information -->
+		<script>
+			// Check if the user has given consent previously
+			if (!localStorage.getItem("cookieConsent")) {
+				// If no consent given, display the cookie consent banner
+				document.getElementById("cookie-consent-banner").style.display = "block";
+			}
+
+			// Handle the "Accept" button click
+			document.getElementById("accept-cookies").addEventListener("click", function() {
+				// Set a localStorage item to record consent
+				localStorage.setItem("cookieConsent", "true");
+
+				// Set cookies with technical data (modify as needed)
+				document.cookie = "BrowserInfo=" + navigator.userAgent + "; SameSite=Strict";
+				document.cookie = "LoadTime=" + (performance.timing.loadEventEnd - performance.timing.navigationStart) + "ms; SameSite=Strict";
+				document.cookie = "UserLanguage=" + navigator.language + "; SameSite=Strict";
+				document.cookie = "ScreenResolution=" + window.screen.width + "x" + window.screen.height + "; SameSite=Strict";
+
+				// Hide the cookie consent banner
+				document.getElementById("cookie-consent-banner").style.display = "none";
+			}
+		</script>
+    <header>
+        <h1>Joaquim</h1>
+        <p>Programmer and Student</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <div class="speech-bubble">
+                Welcome to my personal website. I'm Joaquim, a programmer and student passionate about technology and coding. I'm constantly learning and exploring new horizons in the world of software development. This website is a place for me to share my experiences and connect with like-minded individuals.
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="speech-bubble">
+                If you'd like to get in touch, feel free to reach out to me:
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">LinkedIn Profile</a></p>
+            </div>
+        </section>
+    </div>
+	<!-- Add a button to trigger the display of cookie information -->
+    <button onclick="displayCookieInformation()">Show Cookie Information</button>
+
+    <!-- Function to display all cookie information -->
+    <script>
+        function displayCookieInformation() {
+            const allCookies = document.cookie.split(';');
+            if (allCookies.length > 0 && allCookies[0] !== "") {
+                const cookieInfoText = allCookies.join('\n');
+                // Display cookie information in an alert
+                alert("Cookie Information:\n" + cookieInfoText);
+            } else {
+                alert("No cookies found.");
+            }
+        }
+    </script>
+</body>
+</html>
