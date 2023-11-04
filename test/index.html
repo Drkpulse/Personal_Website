@@ -112,35 +112,35 @@
     </style>
 </head>
 <body>
-	    <!-- Cookie consent banner -->
-		<div id="cookie-consent-banner">
-			This website uses cookies to ensure you get the best experience on our website.
-			<button id="accept-cookies">Accept</button>
-		</div>
+    <!-- Cookie consent banner -->
+    <div id="cookie-consent-banner">
+        This website uses cookies to ensure you get the best experience on our website.
+        <button id="accept-cookies">Accept</button>
+    </div>
 
-		<!-- JavaScript to set and display cookie information -->
-		<script>
-			// Check if the user has given consent previously
-			if (!localStorage.getItem("cookieConsent")) {
-				// If no consent given, display the cookie consent banner
-				document.getElementById("cookie-consent-banner").style.display = "block";
-			}
+    <!-- JavaScript to set and display cookie information -->
+    <script>
+        // Check if the user has given consent previously
+        if (!localStorage.getItem("cookieConsent")) {
+            // If no consent given, display the cookie consent banner
+            document.getElementById("cookie-consent-banner").style.display = "block";
+        }
 
-			// Handle the "Accept" button click
-			document.getElementById("accept-cookies").addEventListener("click", function() {
-				// Set a localStorage item to record consent
-				localStorage.setItem("cookieConsent", "true");
+		document.getElementById("accept-cookies").addEventListener("click", function() {
+    // Set a localStorage item to record consent
+    localStorage.setItem("cookieConsent", "true");
 
-				// Set cookies with technical data (modify as needed)
-				document.cookie = "BrowserInfo=" + navigator.userAgent + "; SameSite=Strict";
-				document.cookie = "LoadTime=" + (performance.timing.loadEventEnd - performance.timing.navigationStart) + "ms; SameSite=Strict";
-				document.cookie = "UserLanguage=" + navigator.language + "; SameSite=Strict";
-				document.cookie = "ScreenResolution=" + window.screen.width + "x" + window.screen.height + "; SameSite=Strict";
+    // Set cookies with technical data (modify as needed)
+    document.cookie = "BrowserInfo=" + navigator.userAgent + "; SameSite=Strict";
+    document.cookie = "LoadTime=" + (performance.timing.loadEventEnd - performance.timing.navigationStart) + "ms; SameSite=Strict";
+    document.cookie = "UserLanguage=" + navigator.language + "; SameSite=Strict";
+    document.cookie = "ScreenResolution=" + window.screen.width + "x" + window.screen.height + "; SameSite=Strict";
 
-				// Hide the cookie consent banner
-				document.getElementById("cookie-consent-banner").style.display = "none";
-			}
-		</script>
+    // Hide the cookie consent banner
+    document.getElementById("cookie-consent-banner").style.display = "none";
+});
+
+    </script>
     <header>
         <h1>Joaquim</h1>
         <p>Programmer and Student</p>
@@ -163,7 +163,7 @@
             </div>
         </section>
     </div>
-	<!-- Add a button to trigger the display of cookie information -->
+    <!-- Add a button to trigger the display of cookie information -->
     <button onclick="displayCookieInformation()">Show Cookie Information</button>
 
     <!-- Function to display all cookie information -->
