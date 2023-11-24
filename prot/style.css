@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    padding: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Light mode styles */
+body, header, footer, .project-link {
+    background-color: #fff;
+    color: #333;
+}
+
+.project-list, .project-details, .details-container {
+    background-color: #f0f0f0;
+}
+
+.project-link {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+body.dark-mode, header.dark-mode, footer.dark-mode, .project-link.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.project-list.dark-mode, .project-details.dark-mode, .details-container.dark-mode {
+    background-color: #222;
+}
+
+.project-link.dark-mode {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Toggle dark mode button styles */
+.toggle-dark-mode-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.toggle-dark-mode-btn.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    body, header, footer, .project-link, .project-list, .project-details, .details-container {
+        background-color: #222;
+        color: #fff;
+    }
+
+    .project-link {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+}
