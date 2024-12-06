@@ -1,0 +1,47 @@
+{
+  "portfolio": {
+    "personal_info": {
+      "name": "José Beirão",
+      "title": "Software Developer",
+      "email": "zbeirao@proton.me",
+      "phone": "+1234567890",
+      "location": "Somewhere, PT"
+    },
+    "skills": [
+      "JavaScript",
+      "Python",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "projects": [
+      {
+        "title": "Personal Website",
+        "description": "A personal portfolio website to showcase my work and skills.",
+        "technologies": ["HTML", "Bootstrap", "JavaScript"],
+        "link": "https://www.zbeirao.com/"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Testing Test",
+        "institution": "University of Example",
+        "year": 2020
+      },
+      {
+        "degree": "Master of Science in Software Engineering",
+        "institution": "Example University",
+        "year": 2022
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Certified Crap Developer",
+        "issuer": "Example Certification Authority",
+        "year": 2021
+      }
+    ]
+  }
+}
