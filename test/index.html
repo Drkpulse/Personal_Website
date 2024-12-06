@@ -118,29 +118,64 @@
         <button id="accept-cookies">Accept</button>
     </div>
 
-    <!-- JavaScript to set and display cookie information -->
-    <script>
-        // Check if the user has given consent previously
-        if (!localStorage.getItem("cookieConsent")) {
-            // If no consent given, display the cookie consent banner
-            document.getElementById("cookie-consent-banner").style.display = "block";
-        }
-
-		document.getElementById("accept-cookies").addEventListener("click", function() {
+<script>
+    // Check if the user has given consent previously
+   document.getElementById("accept-cookies").addEventListener("click", function() {
     // Set a localStorage item to record consent
     localStorage.setItem("cookieConsent", "true");
 
-    // Set cookies with technical data (modify as needed)
-    document.cookie = "BrowserInfo=" + navigator.userAgent + "; SameSite=Strict";
-    document.cookie = "LoadTime=" + (performance.timing.loadEventEnd - performance.timing.navigationStart) + "ms; SameSite=Strict";
-    document.cookie = "UserLanguage=" + navigator.language + "; SameSite=Strict";
-    document.cookie = "ScreenResolution=" + window.screen.width + "x" + window.screen.height + "; SameSite=Strict";
+    // Set cookies with technical data
+    document.cookie = "BrowserInfo=" + navigator.userAgent + "; SameSite=Strict; path=/";
+    document.cookie = "LoadTime=" + (performance.timing.loadEventEnd - performance.timing.navigationStart) + "ms; SameSite=Strict; path=/";
+    document.cookie = "UserLanguage=" + navigator.language + "; SameSite=Strict; path=/";
+    document.cookie = "ScreenResolution=" + window.screen.width + "x" + window.screen.height + "; SameSite=Strict; path=/";
+    
+    // Additional information
+    document.cookie = "Timestamp=" + new Date().toISOString() + "; SameSite=Strict; path=/"; // Current timestamp
+    document.cookie = "UserTimezone=" + Intl.DateTimeFormat().resolvedOptions().timeZone + "; SameSite=Strict; path=/"; // User's timezone
+    document.cookie = "ReferrerURL=" + document.referrer + "; SameSite=Strict; path=/"; // Referrer URL
+    document.cookie = "DeviceType=" + (navigator.userAgent.includes("Mobi") ? "Mobile" : "Desktop") + "; SameSite=Strict; path=/"; // Device type
+    document.cookie = "ScreenColorDepth=" + window.screen.colorDepth + " bits; SameSite=Strict; path=/"; // Screen color depth
+    document.cookie = "BrowserLanguage=" + navigator.language + "; SameSite=Strict; path=/"; // Browser language
+
+    // New additional cookies
+    document.cookie = "SessionID=" + generateSessionID() + "; SameSite=Strict; path=/"; // Unique session ID
+    document.cookie = "LastVisit=" + new Date().toISOString() + "; SameSite=Strict; path=/"; // Last visit timestamp
+    document.cookie = "UserPreferences=" + JSON.stringify({ theme: "light", language: navigator.language }) + "; SameSite=Strict; path=/"; // User preferences
+    document.cookie = "ScrollPosition=" + window.scrollY + "; SameSite=Strict; path=/"; // Scroll position
+    document.cookie = "VisitedPages=" + JSON.stringify([]) + "; SameSite=Strict; path=/"; // Visited pages (initially empty)
+    document.cookie = "ReferralSource=" + (document.referrer ? new URL(document.referrer).hostname : "Direct") + "; SameSite=Strict; path=/"; // Referral source
+    document.cookie = "BrowserVersion=" + navigator.userAgent.split(" ")[0] + "; SameSite=Strict; path=/"; // Browser version
 
     // Hide the cookie consent banner
     document.getElementById("cookie-consent-banner").style.display = "none";
 });
 
-    </script>
+// Function to generate a unique session ID
+function generateSessionID() {
+    return 'session-' + Math.random().toString(36).substr(2, 9);
+}
+    });
+
+    // Function to display all cookie information
+    function displayCookieInformation() {
+        const allCookies = document.cookie.split(';');
+        let cookieInfo = "Cookie Information:\n";
+
+        if (allCookies.length > 0 && allCookies[0] !== "") {
+            allCookies.forEach(cookie => {
+                const [name, value] = cookie.split('=');
+                cookieInfo += `Name: ${name.trim()}, Value: ${value.trim()}\n`;
+            });
+        } else {
+            cookieInfo = "No cookies found.";
+        }
+
+        // Display cookie information in an alert
+        alert(cookieInfo);
+    }
+</script>
+
     <header>
         <h1>Joaquim</h1>
         <p>Programmer and Student</p>
